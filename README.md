@@ -53,6 +53,8 @@ Configure Bind Server :
 root@helper# git clone https://github.com/alanadiprastyo/openshift-4.6.git
 root@helper# yum -y install bind bind-utils
 root@helper# setenforce 0
+or 
+root@helper# echo "0" > /selinux/enforce #[Doc](https://www.system-linux.eu/index.php?post/2016/03/09/Activer-Désactiver-SELinux)
 root@helper# cp openshift-4.6/dns/named.conf /etc/named.conf
 ```
 Configure A Record :
